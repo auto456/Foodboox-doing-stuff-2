@@ -1,0 +1,16 @@
+<html>
+<head>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript">
+  function start() {
+    $.ajax({
+      url: "powerOn.php",
+        success: function() {
+          window.location.replace("preview.html");
+        }
+    });
+  }
+  </script>
+</head>
+<body>
+  <img src="start.jpg" height="320" width="480" onclick="start();"></img>
